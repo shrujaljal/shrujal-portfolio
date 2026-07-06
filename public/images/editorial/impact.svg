@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1125" role="img" aria-labelledby="title">
+  <title id="title">Impact visual placeholder</title>
+  <rect width="900" height="1125" fill="#fffaf3"/>
+  <path d="M0 0h900v1125H0z" fill="#8f9a78" opacity=".08"/>
+  <path d="M95 850c194-134 377-160 550-79 111 52 196 54 255 8v346H95z" fill="#8f9a78" opacity=".27"/>
+  <rect x="145" y="152" width="610" height="432" rx="18" fill="#fbf5ec" stroke="#24211d" opacity=".88"/>
+  <path d="M220 474l104-116 91 66 114-156 118 82" fill="none" stroke="#b56f55" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="324" cy="358" r="18" fill="#c49b5e"/>
+  <circle cx="529" cy="268" r="18" fill="#8f9a78"/>
+  <text x="450" y="718" text-anchor="middle" fill="#24211d" font-family="Georgia, serif" font-size="54" font-weight="700">Impact</text>
+  <text x="450" y="774" text-anchor="middle" fill="#24211d" font-family="Inter, Arial, sans-serif" font-size="24" opacity=".62">Strategy | Operations | Analytics</text>
+</svg>

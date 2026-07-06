@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-labelledby="title">
+  <title id="title">BB Wellness marketing and growth placeholder</title>
+  <rect width="900" height="420" fill="#fffaf2"/>
+  <path d="M0 0h900v420H0z" fill="#68785a" opacity=".08"/>
+  <circle cx="455" cy="183" r="104" fill="#68785a" opacity=".28"/>
+  <path d="M455 98c37 54 80 85 130 94-46 29-88 43-126 43-45 0-92-14-141-43 53-13 99-44 137-94z" fill="#517c7c" opacity=".55"/>
+  <path d="M455 122c-38 56-64 113-78 171h156c-13-58-39-115-78-171z" fill="#fffaf2" opacity=".96"/>
+  <rect x="98" y="105" width="170" height="168" rx="15" fill="#fffaf2" stroke="#23201d" opacity=".86"/>
+  <rect x="632" y="105" width="170" height="168" rx="15" fill="#fffaf2" stroke="#23201d" opacity=".86"/>
+  <path d="M132 224h100M132 190h72M668 224h100M668 190h72" stroke="#b76e49" stroke-width="12" stroke-linecap="round"/>
+  <text x="98" y="350" fill="#23201d" font-family="Georgia, serif" font-size="38" font-weight="700">Marketing & Growth</text>
+</svg>

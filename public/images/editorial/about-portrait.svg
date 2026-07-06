@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1080" role="img" aria-labelledby="title">
+  <title id="title">About portrait placeholder</title>
+  <rect width="900" height="1080" fill="#fffaf3"/>
+  <path d="M0 760c170-110 330-132 482-67 142 61 276 48 418-39v426H0z" fill="#8f9a78" opacity=".22"/>
+  <circle cx="698" cy="220" r="164" fill="#b56f55" opacity=".16"/>
+  <rect x="112" y="112" width="676" height="858" rx="18" fill="#fbf5ec" stroke="#24211d" opacity=".82"/>
+  <path d="M250 775c34-160 112-238 236-238 125 0 208 82 249 238v195H250z" fill="#24211d"/>
+  <circle cx="486" cy="390" r="134" fill="#c9906f"/>
+  <path d="M344 348c42-118 117-174 226-168 66 14 111 52 135 116-56-28-107-35-152-22-52 15-121 39-209 74z" fill="#2b241f"/>
+  <text x="450" y="880" text-anchor="middle" fill="#fffaf3" font-family="Georgia, serif" font-size="42" font-weight="700">About Image</text>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1125" role="img" aria-labelledby="title desc">
+  <title id="title">Editorial portrait placeholder</title>
+  <desc id="desc">Warm portrait placeholder for Shrujal Agarwal.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#fffaf3"/>
+      <stop offset=".55" stop-color="#e7d8c4"/>
+      <stop offset="1" stop-color="#d6c4ab"/>
+    </linearGradient>
+    <linearGradient id="jacket" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#24211d"/>
+      <stop offset="1" stop-color="#8f5d4c"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1125" fill="url(#bg)"/>
+  <path d="M0 0h900v1125H0z" fill="#fbf5ec" opacity=".18"/>
+  <circle cx="180" cy="175" r="120" fill="#c49b5e" opacity=".2"/>
+  <circle cx="750" cy="270" r="180" fill="#8f9a78" opacity=".18"/>
+  <path d="M132 1018c38-238 170-371 318-371 151 0 283 133 320 371v107H132z" fill="url(#jacket)"/>
+  <path d="M327 690l123 154 126-154v248H327z" fill="#fffaf3" opacity=".92"/>
+  <path d="M315 420c0-112 63-203 141-203 85 0 152 91 152 203 0 135-64 232-148 232-83 0-145-97-145-232z" fill="#c9906f"/>
+  <path d="M296 374c35-122 105-184 211-184 73 9 128 51 165 126-34-20-72-26-115-17-42 8-76 4-102-12-42 36-95 52-159 48z" fill="#2b241f"/>
+  <rect x="76" y="84" width="748" height="950" rx="22" fill="none" stroke="#fffaf3" stroke-width="5" opacity=".46"/>
+  <text x="450" y="976" text-anchor="middle" fill="#fffaf3" font-family="Georgia, serif" font-size="48" font-weight="700">Portrait Slot</text>
+  <text x="450" y="1028" text-anchor="middle" fill="#fffaf3" font-family="Inter, Arial, sans-serif" font-size="23" opacity=".8">Replace via imageManifest.ts</text>
+</svg>

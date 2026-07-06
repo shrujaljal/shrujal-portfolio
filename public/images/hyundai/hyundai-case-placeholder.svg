@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-labelledby="title">
+  <title id="title">Hyundai Rotem consulting case placeholder</title>
+  <rect width="900" height="420" fill="#f7f1e8"/>
+  <path d="M0 310c160-95 300-122 420-81 160 54 281 38 480-69v260H0z" fill="#517c7c" opacity=".22"/>
+  <rect x="88" y="84" width="232" height="202" rx="12" fill="#fffaf2" stroke="#23201d" opacity=".82"/>
+  <rect x="118" y="120" width="172" height="12" rx="6" fill="#b76e49"/>
+  <rect x="118" y="158" width="126" height="12" rx="6" fill="#68785a"/>
+  <rect x="118" y="196" width="146" height="12" rx="6" fill="#517c7c"/>
+  <path d="M430 270h298l-38-92H468z" fill="#6f4f37"/>
+  <path d="M488 178h188l-42-56H531z" fill="#b76e49"/>
+  <circle cx="506" cy="284" r="31" fill="#23201d"/>
+  <circle cx="650" cy="284" r="31" fill="#23201d"/>
+  <text x="88" y="350" fill="#23201d" font-family="Georgia, serif" font-size="38" font-weight="700">Operations Consulting</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 960" role="img" aria-labelledby="title">
+  <title id="title">Gallery placeholder two</title>
+  <rect width="720" height="960" fill="#fffaf3"/>
+  <circle cx="200" cy="250" r="124" fill="#b56f55" opacity=".18"/>
+  <circle cx="520" cy="530" r="180" fill="#8f9a78" opacity=".22"/>
+  <path d="M160 700h400M210 626h300M268 552h184" stroke="#24211d" stroke-width="20" stroke-linecap="round" opacity=".18"/>
+  <text x="360" y="808" text-anchor="middle" fill="#24211d" font-family="Georgia, serif" font-size="46" font-weight="700">Life Beyond Work</text>
+</svg>

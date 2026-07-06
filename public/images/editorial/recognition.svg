@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 720" role="img" aria-labelledby="title">
+  <title id="title">Recognition visual placeholder</title>
+  <rect width="900" height="720" fill="#fbf5ec"/>
+  <circle cx="690" cy="190" r="145" fill="#c49b5e" opacity=".24"/>
+  <circle cx="230" cy="545" r="160" fill="#b56f55" opacity=".14"/>
+  <rect x="122" y="104" width="656" height="438" rx="16" fill="#fffaf3" stroke="#24211d" opacity=".9"/>
+  <path d="M278 274h344M278 334h260M278 394h304" stroke="#24211d" stroke-width="18" stroke-linecap="round" opacity=".18"/>
+  <path d="M450 138l42 85 94 14-68 66 16 94-84-44-84 44 16-94-68-66 94-14z" fill="#c49b5e"/>
+  <text x="450" y="630" text-anchor="middle" fill="#24211d" font-family="Georgia, serif" font-size="48" font-weight="700">Recognition</text>
+</svg>

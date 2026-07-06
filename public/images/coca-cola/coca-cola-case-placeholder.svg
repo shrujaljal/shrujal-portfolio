@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-labelledby="title">
+  <title id="title">Coca-Cola Icecek case placeholder</title>
+  <rect width="900" height="420" fill="#fffaf2"/>
+  <circle cx="700" cy="130" r="130" fill="#b76e49" opacity=".2"/>
+  <circle cx="180" cy="300" r="110" fill="#d49b45" opacity=".28"/>
+  <rect x="110" y="90" width="250" height="190" rx="14" fill="#f7f1e8" stroke="#23201d" opacity=".88"/>
+  <path d="M146 235c30-70 65-99 105-86 33 11 49-6 76-49" fill="none" stroke="#b76e49" stroke-width="14" stroke-linecap="round"/>
+  <rect x="475" y="108" width="64" height="210" rx="30" fill="#b76e49"/>
+  <rect x="566" y="72" width="64" height="246" rx="30" fill="#68785a"/>
+  <rect x="657" y="148" width="64" height="170" rx="30" fill="#517c7c"/>
+  <text x="110" y="352" fill="#23201d" font-family="Georgia, serif" font-size="38" font-weight="700">Growth Case</text>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 960" role="img" aria-labelledby="title">
+  <title id="title">Gallery placeholder one</title>
+  <rect width="720" height="960" fill="#fbf5ec"/>
+  <path d="M0 720c116-76 244-98 384-66 116 27 228 11 336-48v354H0z" fill="#8f9a78" opacity=".24"/>
+  <circle cx="360" cy="328" r="150" fill="#c49b5e" opacity=".24"/>
+  <text x="360" y="488" text-anchor="middle" fill="#24211d" font-family="Georgia, serif" font-size="46" font-weight="700">Gallery Slot</text>
+</svg>
