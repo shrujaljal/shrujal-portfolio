@@ -4,16 +4,15 @@ import { SectionHeader } from "./SectionHeader";
 import { WebsiteImage } from "./WebsiteImage";
 
 const recognitionImages = [
-  { slot: "recognitionBGS", label: "Beta Gamma Sigma", featured: true },
-  { slot: "recognitionCertificate", label: "BGS detail", featured: false },
-  { slot: "recognitionStudentAward", label: "Professional resources", featured: false },
+  { slot: "recognitionCertificate", label: "Beta Gamma Sigma Honor Society" },
+  { slot: "recognitionStudentAward", label: "Professional Development Lead Award" },
 ] as const;
 
 export function Recognition() {
   return (
-    <section id="recognition" className="relative z-10 mx-auto w-full max-w-7xl px-5 py-14 sm:px-8 lg:py-20">
+    <section id="recognition" className="relative z-10 mx-auto w-full max-w-7xl px-5 py-12 sm:px-8 lg:py-16">
       <SectionHeader eyebrow={recognition.eyebrow} title={recognition.title} body={recognition.body} />
-      <div className="grid gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
+      <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-start">
         <div className="grid gap-4 sm:grid-cols-2">
           {recognition.items.map((item, index) => {
             const Icon = item.icon;
@@ -28,15 +27,16 @@ export function Recognition() {
             );
           })}
         </div>
-        <FadeIn className="grid gap-3 sm:grid-cols-2">
+        <FadeIn className="grid gap-3">
           {recognitionImages.map((image) => (
-            <div key={image.slot} className={`image-frame group relative ${image.featured ? "sm:col-span-2" : ""}`}>
+            <div key={image.slot} className="image-frame group relative">
               <WebsiteImage
                 slot={image.slot}
-                className={`${image.featured ? "aspect-[16/9]" : "aspect-[5/3]"} w-full`}
-                imgClassName="transition duration-500 group-hover:scale-[1.03]"
+                className="h-44 w-full bg-sand/35 sm:h-52 lg:h-56"
+                imgClassName="object-contain transition duration-500 group-hover:scale-[1.02]"
+                overlay={false}
               />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-charcoal/80 to-transparent p-4 text-sm font-bold text-porcelain">
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-charcoal/80 to-transparent p-3 text-xs font-bold leading-4 text-porcelain sm:text-sm">
                 {image.label}
               </div>
             </div>

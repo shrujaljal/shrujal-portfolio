@@ -13,8 +13,10 @@ npm.cmd run dev -- -H 127.0.0.1
 Local preview:
 
 ```txt
-http://127.0.0.1:3000
+http://127.0.0.1:3002
 ```
+
+If `3000` is occupied, Next may choose a fallback port such as `3002`.
 
 Avoid running `next build` while a dev server is actively serving the site. If you do, restart the dev server afterward so the `.next` cache and CSS assets are clean.
 
@@ -68,7 +70,7 @@ Edit the relevant object:
 - `projects`
 - `leadership`
 - `howIWork`
-- `gallery`
+- `skillsSection`
 - `contact`
 
 Avoid adding copy directly inside component files unless it is truly layout-only text.
@@ -108,17 +110,17 @@ Never use or reference images from:
 Images/not priority/
 ```
 
-Current page should use about 15 to 19 images total; the current version uses 16.
+Current page uses 6 rendered images. Keep future image additions selective and recruiter-relevant.
 
 ## Current Section/Image Rules
 
 - Hero: `Professional_Summit_Picture`
-- About: `ucr_Solo`
-- Recognition: `BGs_Ceremony_Picture`, `BGS_Award_Collection`, `Professional_lead_Certificates`
-- Impact: `Hyundai_Rotem_Visit`
+- About: no standalone image currently rendered
+- Recognition: `BGS_Award_Collection`, `Professional_lead_Certificates`
+- Impact: no image currently rendered
 - Projects: `Hyundai_Rotem_Class_presentation`, `Case_Study_Competition`, `Podcast_Shoot_Picture`
-- Leadership: `Moderator_Summit_Picture`, `Professional_Lead_team`
-- Gallery mosaic: `Graduation_Radiant-Picture`, `Solo_goal_Digger`, `WIB_Group_Picture`, `Student_association_group`, `UCR_Banner_Solo`
+- Leadership: no image currently rendered
+- Gallery mosaic: removed from the rendered page
 
 Do not repeat the same key image across sections.
 
@@ -140,15 +142,9 @@ src/components/Projects.tsx
 
 4. Make sure each project image matches the project story.
 
-## Adjust Gallery
+## Gallery
 
-Gallery is no longer a standalone section. It is a compact mosaic inside:
-
-```txt
-src/components/Leadership.tsx
-```
-
-Keep it small, editorial, and hover-caption based. Do not make it long or Instagram-like.
+The gallery mosaic has been removed entirely from the rendered page. Do not reintroduce it unless the user specifically asks.
 
 ## Adjust Spacing
 

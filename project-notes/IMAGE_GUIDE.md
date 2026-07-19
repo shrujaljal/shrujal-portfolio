@@ -32,7 +32,7 @@ Current source intentionally avoids:
 
 ## Current Rendered Image Set
 
-The page currently renders 16 images total.
+The page currently renders 6 images total.
 
 Hero is eager-loaded. All other `WebsiteImage` instances lazy-load.
 
@@ -48,40 +48,27 @@ Reason: Professional, recruiter-facing, and focused on Shrujal's presence.
 
 Do not use group images or lower-priority photos for the hero.
 
-## About / Positioning
+## About
 
-Current image:
-
-```txt
-ucr_Solo
-```
-
-Purpose: Adds personal MBA/UCR context in the About / Positioning section.
+The About section currently does not render a standalone image.
 
 ## Recognition
 
 Current Recognition images:
 
-- `BGs_Ceremony_Picture`
 - `BGS_Award_Collection`
 - `Professional_lead_Certificates`
 
-Use the two BGS images in separate proof contexts:
+Use the Recognition images in separate proof contexts:
 
-- `BGs_Ceremony_Picture` as the main recognition image
-- `BGS_Award_Collection` as supporting BGS detail
+- `BGS_Award_Collection` as the `Beta Gamma Sigma Honor Society` supporting image
+- `Professional_lead_Certificates` as professional development leadership proof
 
-Do not repeat the same BGS image twice.
+Recognition currently renders two supporting images stacked one below the other. `BGs_Ceremony_Picture` remains available in the manifest but is not currently rendered.
 
 ## Impact
 
-Current Impact image:
-
-```txt
-Hyundai_Rotem_Visit
-```
-
-Use this image only once. Keep the Hyundai Rotem name/banner visible; avoid crops that remove the banner.
+Impact currently does not render an image. `Hyundai_Rotem_Visit` remains available in the manifest but is not currently rendered.
 
 ## Projects
 
@@ -97,14 +84,16 @@ Important:
 - Do not use unrelated Google/generic images for Professional Development.
 - Use `Podcast_Shoot_Picture` or `Professional_Lead_team` only for the professional development/podcast initiative.
 
-## Leadership + Gallery
+## Leadership
 
-Current Leadership images:
+Leadership currently does not render images.
+
+These image slots remain available in the manifest if intentionally reintroduced later:
 
 - `Moderator_Summit_Picture`
 - `Professional_Lead_team`
 
-Current Gallery mosaic images:
+The gallery mosaic has been removed from the rendered page. These image slots remain available if intentionally reintroduced later, but they should not appear by default:
 
 - `Graduation_Radiant-Picture`
 - `Solo_goal_Digger`
@@ -112,7 +101,7 @@ Current Gallery mosaic images:
 - `Student_association_group`
 - `UCR_Banner_Solo`
 
-The gallery should remain compact, editorial, and interactive on hover. `UCR_Banner_Solo` should stay small and use `object-contain` so the complete image is visible. Do not turn it into a long social-media gallery.
+Do not turn the site into a long social-media gallery.
 
 ## How To Swap An Image Safely
 

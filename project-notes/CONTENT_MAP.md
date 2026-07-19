@@ -48,7 +48,7 @@ Ideas into impact.
 Current label:
 
 ```txt
-MBA Graduate | Strategy & Operations, Business Analytics, Marketing Operations
+MBA Graduate | Strategy & Operations, Business Analytics
 ```
 
 Current body:
@@ -59,11 +59,20 @@ I help teams turn ambiguous business problems into clear recommendations, useful
 
 Current CTAs:
 
-- Request Resume
+- View Projects
 - LinkedIn
 - Email Me
 
-## About / Positioning
+Current hero proof row:
+
+- UCR MBA
+- Goldman Sachs
+- Thomson Reuters
+- Hyundai Rotem
+
+`Beta Gamma Sigma` is intentionally not shown in the hero proof row; it remains in Recognition.
+
+## About
 
 Component: `src/components/About.tsx`
 
@@ -71,10 +80,16 @@ Content source: `about` and `valueSnapshot` in `src/content/siteContent.ts`
 
 Purpose: Combine human positioning and recruiter snapshot in one tighter section.
 
+Current eyebrow:
+
+```txt
+About
+```
+
 Current heading:
 
 ```txt
-An MBA-trained operator who brings calm structure to business problems.
+An MBA-trained operator connecting strategy, analysis, communication, and execution.
 ```
 
 Includes:
@@ -82,6 +97,8 @@ Includes:
 - Two concise About paragraphs
 - Three positioning notes
 - Three recruiter snapshot cards from `valueSnapshot`
+- No standalone About image
+- Smaller About heading scale than the default SectionHeader size
 
 ## Recognition
 
@@ -102,13 +119,18 @@ Cards:
 - UCR MBA
 - Beta Gamma Sigma
 - Case Competition Recognition
-- Professional Resources Lead
+- Professional Development Lead Award
 
 Images:
 
-- `BGs_Ceremony_Picture`
 - `BGS_Award_Collection`
 - `Professional_lead_Certificates`
+
+Recognition image layout:
+
+- Cards on the left
+- Two supporting images stacked one below the other on the right
+- Supporting BGS image label: `Beta Gamma Sigma Honor Society`
 
 ## Impact
 
@@ -133,9 +155,24 @@ Impact cards:
 - Startup growth coordination / BB Wellness
 - Rooms that need momentum / Presentations, moderation, student leadership
 
-Image:
+Image: no image currently rendered. The Hyundai Rotem image was removed from Impact so the section is now a full-width card grid under the heading.
 
-- `Hyundai_Rotem_Visit`
+## Skills
+
+Component: `src/components/Skills.tsx`
+
+Content source: `skillsSection` in `src/content/siteContent.ts`
+
+Purpose: Present a recruiter-readable skills toolkit early in the page, after Impact and before Projects.
+
+Categories:
+
+- Business Analysis
+- Analytics & Reporting
+- Project Delivery
+- Enterprise Tools
+- AI & Automation
+- Business Strategy
 
 ## Projects
 
@@ -148,7 +185,7 @@ Purpose: Present selected projects as business problems and practical approaches
 Current heading:
 
 ```txt
-Selected projects, framed as business problems.
+Selected projects
 ```
 
 Project cards:
@@ -163,22 +200,21 @@ Images by order:
 - `Case_Study_Competition`
 - `Podcast_Shoot_Picture`
 
-The project lens is now a compact strip above the project cards so the section does not leave a blank side column.
+The project lens is a compact strip above the project cards so the section does not leave a blank side column. Project cards currently render image, title, business question, approach, and skill chips. Extra project detail bullets remain in `siteContent.ts` for future use but are not currently rendered. Avoid adding unsupported numerical claims unless the user provides the source.
 
-## Leadership + Gallery
+## Leadership
 
 Component: `src/components/Leadership.tsx`
 
-Content source: `leadership` and `gallery` in `src/content/siteContent.ts`
+Content source: `leadership` in `src/content/siteContent.ts`
 
-Purpose: Combine leadership proof with a compact personality/community mosaic.
+Purpose: Present leadership proof in a tighter, more professional section.
 
-Leadership images:
+Leadership images: no images currently rendered.
 
-- `Moderator_Summit_Picture`
-- `Professional_Lead_team`
+Leadership descriptions are more specific and recruiter-readable, with emphasis on TEDx team leadership, professional development leadership, moderation/presentation, event flow, audience engagement, and student association coordination.
 
-Gallery mosaic images:
+The gallery mosaic was removed entirely. These images remain available in the manifest but are not rendered:
 
 - `Graduation_Radiant-Picture`
 - `Solo_goal_Digger`
@@ -186,20 +222,9 @@ Gallery mosaic images:
 - `Student_association_group`
 - `UCR_Banner_Solo`
 
-The gallery is intentionally small, interactive on hover, and not Instagram-like. `UCR_Banner_Solo` is a contained tile so the complete UCR image stays visible.
+## How I Work / Process
 
-## How I Work / Skills
-
-Component: `src/components/HowIWork.tsx`
-
-Content source: `howIWork` in `src/content/siteContent.ts`
-
-Purpose: Explain Shrujal's operating system for ambiguity and show role-relevant skills.
-
-Includes:
-
-- Six concise process steps
-- Skills chips for operations coordination, reporting, dashboards, campaign insights, stakeholder communication, and program execution
+Component exists at `src/components/HowIWork.tsx`, and content still exists in `howIWork` inside `src/content/siteContent.ts`, but this section is currently not rendered.
 
 ## Contact
 

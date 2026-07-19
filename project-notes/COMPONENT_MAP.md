@@ -12,13 +12,13 @@ Assembles the one-page site in order:
 - About
 - Recognition
 - Impact
+- Skills
 - Projects
 - Leadership
-- HowIWork
 - Contact
 - Footer
 
-Standalone `ValueSnapshot` and `Gallery` components were removed. Their content now lives inside About and Leadership respectively.
+Standalone `ValueSnapshot` and `Gallery` components are not rendered. Recruiter snapshot content lives inside About. Gallery content has been removed from the rendered page.
 
 ### `src/app/layout.tsx`
 
@@ -43,16 +43,16 @@ Current nav links:
 - About
 - Recognition
 - Impact
+- Skills
 - Projects
 - Leadership
-- Skills
 - Contact
 
 ## Hero
 
 ### `src/components/Hero.tsx`
 
-Controls first-screen positioning copy, role chips, proof signals, CTAs, and hero image.
+Controls first-screen positioning copy, proof signals, CTAs, and hero image.
 
 Uses:
 
@@ -61,20 +61,21 @@ Uses:
 
 Hero CTAs:
 
-- Request Resume
+- View Projects
 - LinkedIn
 - Email Me
 
-## About / Positioning
+Hero avoids repeated role chips and metric cards. Its primary CTA points to Projects; Request Resume remains in the navbar and contact section. The hero positioning line is `MBA Graduate | Strategy & Operations, Business Analytics`, and the proof row excludes `Beta Gamma Sigma`. The hero image overlay shows only `Shrujal Agarwal`.
+
+## About
 
 ### `src/components/About.tsx`
 
-Controls About copy, positioning notes, recruiter snapshot cards, and About image.
+Controls About copy, positioning notes, and recruiter snapshot cards.
 
-Uses:
+Uses `about` and `valueSnapshot` from `src/content/siteContent.ts`.
 
-- `about` and `valueSnapshot` from `src/content/siteContent.ts`
-- `aboutPhoto` from `src/content/imageManifest.ts`
+The About eyebrow is simply `About`. This component passes a smaller `titleClassName` into `SectionHeader` so the heading feels aligned with the reduced site scale.
 
 ## Recognition
 
@@ -85,9 +86,10 @@ Controls proof/recognition cards and compact proof image grid.
 Uses:
 
 - `recognition` from `src/content/siteContent.ts`
-- `recognitionBGS`
 - `recognitionCertificate`
 - `recognitionStudentAward`
+
+The section header renders above all Recognition content. The content area uses cards on the left and two stacked supporting images on the right. The BGS supporting label is `Beta Gamma Sigma Honor Society`; the BGS ceremony image is not currently rendered.
 
 ## Impact
 
@@ -98,9 +100,8 @@ Controls the operations/reporting/cross-functional impact section.
 Uses:
 
 - `impact` from `src/content/siteContent.ts`
-- `projectHyundaiVisit` image
 
-The Hyundai visit image is displayed with an uncropped/contained treatment to preserve the Hyundai Rotem banner.
+The section header renders above all Impact content. The Hyundai Rotem image is not currently rendered; Impact is a full-width responsive card grid.
 
 ## Projects
 
@@ -116,34 +117,35 @@ Current image slots by project order:
 - `recognitionCaseCompetition`
 - `projectPodcast`
 
-The project lens is a compact strip above the cards so Projects does not leave a blank side column.
+The project lens is a compact strip above the cards so Projects does not leave a blank side column. Project images are small and contained. Cards currently render image, title, business question, approach, and skill chips; extra detail bullets remain in content but are not rendered.
 
-## Leadership + Gallery
+## Leadership
 
 ### `src/components/Leadership.tsx`
 
-Controls leadership cards, leadership proof images, and the compact gallery mosaic.
+Controls leadership cards and leadership proof images.
 
-Uses:
+Uses `leadership` from `src/content/siteContent.ts`.
 
-- `leadership` and `gallery` from `src/content/siteContent.ts`
-- `leadershipModeration`
-- `leadershipProfessionalLead`
-- `galleryGraduation`
-- `galleryCityNight`
-- `galleryWomenInBusiness`
-- `galleryCommunity`
-- `galleryUcrBanner`
+The gallery mosaic has been removed entirely.
 
-The mosaic includes hover captions and should stay compact. `galleryUcrBanner` uses a contained image treatment so the full UCR banner photo is visible.
+Leadership is currently cards-only; no image row is rendered.
 
-## How I Work / Skills
+## How I Work / Process
 
 ### `src/components/HowIWork.tsx`
 
-Controls process steps and skills chips.
+Controls process steps, but is currently not rendered in `src/app/page.tsx`.
 
 Uses `howIWork` from `src/content/siteContent.ts`.
+
+## Skills
+
+### `src/components/Skills.tsx`
+
+Controls six skill category cards and skill chips.
+
+Uses `skillsSection` from `src/content/siteContent.ts`.
 
 ## Contact
 
@@ -181,7 +183,7 @@ Reusable Framer Motion reveal wrapper. Respects reduced motion.
 
 ### `src/components/SectionHeader.tsx`
 
-Reusable section eyebrow/title/body header. Heading scale was reduced for the shorter page.
+Reusable section eyebrow/title/body header. Heading scale was reduced for the shorter page. The header now uses a wider max width so section headings can stretch horizontally. Supports an optional `titleClassName` override, currently used by About for a smaller heading.
 
 ### `src/components/WebsiteImage.tsx`
 

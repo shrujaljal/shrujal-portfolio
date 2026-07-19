@@ -1,4 +1,3 @@
-import { ArrowUpRight } from "lucide-react";
 import { projects } from "@/content/siteContent";
 import { FadeIn } from "./FadeIn";
 import { SectionHeader } from "./SectionHeader";
@@ -10,10 +9,10 @@ export function Projects() {
   return (
     <section id="projects" className="section-shell relative z-10">
       <SectionHeader eyebrow={projects.eyebrow} title={projects.title} />
-      <FadeIn className="editorial-card paper-texture mb-5 grid gap-5 p-5 md:grid-cols-[0.42fr_0.58fr] md:items-center">
+      <FadeIn className="editorial-card paper-texture mb-5 grid gap-5 p-5 md:grid-cols-[0.38fr_0.62fr] md:items-center">
         <div>
           <p className="eyebrow">Project Lens</p>
-          <p className="mt-4 font-serif text-3xl font-semibold leading-[1.08] text-charcoal">
+          <p className="mt-4 font-serif text-2xl font-semibold leading-[1.12] text-charcoal sm:text-3xl">
             The work is not just finding the answer. It is making the path understandable enough for people to move.
           </p>
         </div>
@@ -23,17 +22,19 @@ export function Projects() {
       </FadeIn>
       <div className="grid gap-4 lg:grid-cols-3">
         {projects.items.map((project, index) => (
-          <FadeIn key={project.title} delay={index * 0.05} className="group editorial-card flex h-full flex-col p-5 transition hover:-translate-y-1 hover:shadow-card">
+          <FadeIn key={project.title} delay={index * 0.05} className="group editorial-card flex h-full flex-col p-4 transition hover:-translate-y-1 hover:shadow-card">
             <div className="image-frame">
-              <WebsiteImage slot={projectImageSlots[index]} className="aspect-[4/3] w-full" imgClassName="transition duration-500 group-hover:scale-[1.03]" />
+              <WebsiteImage
+                slot={projectImageSlots[index]}
+                className="h-36 w-full bg-sand/35 sm:h-40"
+                imgClassName="object-contain transition duration-500 group-hover:scale-[1.02]"
+                overlay={false}
+              />
             </div>
-            <div className="mt-5 flex items-start justify-between gap-4">
-              <h3 className="font-serif text-2xl font-semibold leading-tight text-charcoal">{project.title}</h3>
-              <span className="mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-charcoal/10 text-charcoal/60 transition group-hover:border-terracotta group-hover:text-terracotta">
-                <ArrowUpRight size={18} />
-              </span>
+            <div className="mt-5">
+              <h3 className="font-serif text-[1.55rem] font-semibold leading-tight text-charcoal">{project.title}</h3>
             </div>
-            <div className="mt-4 grid gap-4">
+            <div className="mt-4 grid gap-3">
               <div>
                 <p className="eyebrow">Business Question</p>
                 <p className="mt-2 text-sm leading-6 text-charcoal/70">{project.question}</p>
