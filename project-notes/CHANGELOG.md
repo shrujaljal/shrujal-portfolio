@@ -1,5 +1,22 @@
 # Changelog
 
+## 2026-07-19 - Site Spacing Rhythm Pass
+
+### Changed
+
+- Reduced the Hero's forced desktop height so the About section starts sooner and the first fold has less empty space.
+- Tightened shared section padding and section-header spacing across the site for a more even scroll rhythm.
+- Aligned Recognition and Contact vertical padding with the updated site rhythm.
+- Reduced a few oversized internal gaps in About and Projects.
+
+### Verification
+
+- Production build passes:
+
+```bash
+npm.cmd run build
+```
+
 ## 2026-07-19 - Leadership Cards Only Update
 
 ### Changed

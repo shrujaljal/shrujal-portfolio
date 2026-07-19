@@ -6,7 +6,7 @@ export function About() {
   return (
     <section id="about" className="section-shell relative z-10">
       <SectionHeader eyebrow={about.eyebrow} title={about.title} titleClassName="text-3xl sm:text-4xl" />
-      <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+      <div className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
         <div>
           <div className="space-y-4 text-base leading-8 text-charcoal/70 sm:text-lg">
             {about.body.map((paragraph) => (
@@ -15,7 +15,7 @@ export function About() {
               </FadeIn>
             ))}
           </div>
-          <FadeIn className="mt-7 grid gap-3 sm:grid-cols-3">
+          <FadeIn className="mt-5 grid gap-3 sm:grid-cols-3">
             {about.notes.map((note) => (
               <div key={note} className="editorial-card px-5 py-4 text-sm font-bold text-charcoal/70">
                 {note}

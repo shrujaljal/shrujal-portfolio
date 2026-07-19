@@ -99,6 +99,8 @@ Do not use images from `Images\not priority`. Current source avoids `Google_Site
 
 Current layout refinements:
 
+- Global section spacing is intentionally tighter and more even; avoid reintroducing large blank vertical gaps.
+- Hero uses content-led desktop height instead of a tall first-screen block so About starts sooner.
 - About eyebrow is simply `About`, and the About heading uses a smaller section-specific scale.
 - Section headings render before section content, with a wider heading container so titles can stretch horizontally.
 - Recognition uses cards on the left and two supporting images stacked one below the other on the right.

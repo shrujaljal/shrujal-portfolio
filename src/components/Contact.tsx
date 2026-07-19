@@ -4,7 +4,7 @@ import { FadeIn } from "./FadeIn";
 
 export function Contact() {
   return (
-    <section id="contact" className="relative z-10 px-5 py-12 sm:px-8 lg:py-16">
+    <section id="contact" className="relative z-10 px-5 py-11 sm:px-8 lg:py-14">
       <FadeIn className="mx-auto max-w-5xl rounded-[8px] border border-terracotta/20 bg-gradient-to-br from-clay via-terracotta to-gold p-6 text-porcelain shadow-editorial sm:p-8 lg:p-10">
         <p className="text-xs font-bold uppercase tracking-[0.18em] text-porcelain/80">{contact.eyebrow}</p>
         <h2 className="mt-4 max-w-4xl text-balance font-serif text-3xl font-semibold leading-[1.08] sm:text-4xl">

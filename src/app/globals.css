@@ -79,7 +79,7 @@ body::after {
 
 @layer components {
   .section-shell {
-    @apply mx-auto w-full max-w-7xl px-5 py-14 sm:px-8 lg:py-20;
+    @apply mx-auto w-full max-w-7xl px-5 py-11 sm:px-8 lg:py-14;
   }
 
   .eyebrow {

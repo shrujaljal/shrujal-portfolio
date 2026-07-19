@@ -11,7 +11,7 @@ export function Hero() {
   const portraitY = useTransform(scrollY, [0, 720], [0, shouldReduceMotion ? 0 : 34]);
 
   return (
-    <section id="home" className="relative z-10 flex min-h-[78vh] items-center px-5 pb-10 pt-24 sm:px-8 lg:min-h-[84vh] lg:pt-24">
+    <section id="home" className="relative z-10 flex items-center px-5 pb-12 pt-28 sm:px-8 lg:min-h-[660px] lg:pb-14 lg:pt-28">
       <div className="mx-auto grid w-full max-w-7xl items-center gap-8 lg:grid-cols-[1.12fr_0.88fr]">
         <motion.div
           initial={shouldReduceMotion ? false : { opacity: 0, y: 28 }}

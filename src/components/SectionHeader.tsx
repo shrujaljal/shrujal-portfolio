@@ -11,7 +11,7 @@ type SectionHeaderProps = {
 
 export function SectionHeader({ eyebrow, title, body, children, titleClassName }: SectionHeaderProps) {
   return (
-    <FadeIn className="mb-8 max-w-6xl lg:mb-10">
+    <FadeIn className="mb-6 max-w-6xl lg:mb-7">
       <p className="eyebrow">{eyebrow}</p>
       <h2
         className={`mt-3 text-balance font-serif font-semibold leading-[1.06] text-charcoal ${

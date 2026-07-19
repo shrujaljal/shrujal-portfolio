@@ -9,7 +9,7 @@ export function Projects() {
   return (
     <section id="projects" className="section-shell relative z-10">
       <SectionHeader eyebrow={projects.eyebrow} title={projects.title} />
-      <FadeIn className="editorial-card paper-texture mb-5 grid gap-5 p-5 md:grid-cols-[0.38fr_0.62fr] md:items-center">
+      <FadeIn className="editorial-card paper-texture mb-4 grid gap-5 p-5 md:grid-cols-[0.38fr_0.62fr] md:items-center">
         <div>
           <p className="eyebrow">Project Lens</p>
           <p className="mt-4 font-serif text-2xl font-semibold leading-[1.12] text-charcoal sm:text-3xl">

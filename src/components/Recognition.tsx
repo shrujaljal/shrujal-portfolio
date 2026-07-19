@@ -10,7 +10,7 @@ const recognitionImages = [
 
 export function Recognition() {
   return (
-    <section id="recognition" className="relative z-10 mx-auto w-full max-w-7xl px-5 py-12 sm:px-8 lg:py-16">
+    <section id="recognition" className="relative z-10 mx-auto w-full max-w-7xl px-5 py-11 sm:px-8 lg:py-14">
       <SectionHeader eyebrow={recognition.eyebrow} title={recognition.title} body={recognition.body} />
       <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-start">
         <div className="grid gap-4 sm:grid-cols-2">
