@@ -255,7 +255,7 @@ export const dashboards = {
       ],
       tools: ["Tableau", "Root cause analysis", "Customer journey", "KPI design"],
       links: [
-        { label: "View on Tableau Public", href: "https://public.tableau.com/app/profile/shrujal.agarwal", primary: true },
+        { label: "Open live dashboard", href: "https://public.tableau.com/app/profile/shrujal.agarwal/viz/RavenStackDashboard12SK1/SPRINT1DASHBOARD", primary: true },
       ],
       note: "",
     },
