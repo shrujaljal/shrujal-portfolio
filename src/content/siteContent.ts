@@ -26,6 +26,7 @@ export const navItems = [
   { label: "Recognition", href: "#recognition" },
   { label: "Impact", href: "#impact" },
   { label: "Skills", href: "#skills" },
+  { label: "Dashboards", href: "#dashboards" },
   { label: "Projects", href: "#projects" },
   { label: "Leadership", href: "#leadership" },
   { label: "Contact", href: "#contact" },
@@ -200,6 +201,63 @@ export const projects = {
         { value: "Repeatable", label: "resource system" },
       ],
       skills: ["Program Execution", "Content Systems", "Career Resources", "Cross-functional Coordination"],
+    },
+  ],
+};
+
+export const dashboards = {
+  eyebrow: "Analytics in Action",
+  title: "Live dashboards, built end to end from raw data to decisions.",
+  body: "Each project starts with a business question, works through messy data, and ends with clear actions for the teams who own the fix. Open them, filter them, click around.",
+  items: [
+    {
+      title: "Payout Network Health",
+      subtitle: "Cross-border payments analytics",
+      image: "/images/dashboards/payout-network-health.jpg",
+      imageAlt: "Tableau dashboard showing payout KPIs, failure rate by corridor, a failure map, a weekly failure trend and failure reasons",
+      question: "Where is a real-time payout network losing reliability, speed and revenue, and what should each team do about it?",
+      metrics: [
+        { value: "120K", label: "payouts across 12 corridors" },
+        { value: "2.5x", label: "worst corridor vs network failure rate" },
+        { value: "~50%", label: "of failures caused by bad recipient data" },
+      ],
+      findings: [
+        "UK to Nigeria bank payouts fail at 8.0% against a 3.2% network benchmark, mostly from invalid account details.",
+        "A rolling-baseline SQL check flags a 6-day partner outage in the Philippines on day one.",
+        "Kenya prefunding runs dry in the last 3 days of each month, a clear fix for Treasury.",
+      ],
+      tools: ["SQL (CTEs, window functions)", "Python (pandas)", "Tableau (LOD, filter actions)", "Data quality"],
+      links: [
+        {
+          label: "Open live dashboard",
+          href: "https://public.tableau.com/app/profile/shrujal.agarwal/viz/PayoutNetworkHealthcross-BorderPayments/PayoutNetworkHealth-JantoSep2026",
+          primary: true,
+        },
+        { label: "Code & analysis", href: "https://github.com/shrujaljal/payments-analytics", primary: false },
+      ],
+      note: "Synthetic dataset modeled on a real-time payments network.",
+    },
+    {
+      title: "SaaS Churn Root Cause Analysis",
+      subtitle: "Customer retention analytics",
+      image: "/images/dashboards/saas-churn-dashboard.jpg",
+      imageAlt: "Tableau dashboard showing churn KPIs, churn rate by industry, revenue at risk by plan tier and a churn heatmap by industry and referral source",
+      question: "Why are customers churning, where is revenue at risk, and which team should act first?",
+      metrics: [
+        { value: "500", label: "SaaS accounts analyzed" },
+        { value: "22%", label: "account churn rate" },
+        { value: "$255K", label: "monthly recurring revenue at risk" },
+      ],
+      findings: [
+        "Churn concentrates in DevTools and event-sourced accounts, while Fintech carries the most revenue risk.",
+        "Nearly half of all churn happens in the first 90 days, and many churners were high-usage but frustrated.",
+        "Five root causes mapped to named owners and actions across Growth, Product, Customer Success and Leadership.",
+      ],
+      tools: ["Tableau", "Root cause analysis", "Customer journey", "KPI design"],
+      links: [
+        { label: "View on Tableau Public", href: "https://public.tableau.com/app/profile/shrujal.agarwal", primary: true },
+      ],
+      note: "",
     },
   ],
 };

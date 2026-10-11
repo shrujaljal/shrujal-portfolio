@@ -1,5 +1,6 @@
 import { About } from "@/components/About";
 import { Contact } from "@/components/Contact";
+import { Dashboards } from "@/components/Dashboards";
 import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
 import { Impact } from "@/components/Impact";
@@ -21,6 +22,7 @@ export default function Home() {
         <Recognition />
         <Impact />
         <Skills />
+        <Dashboards />
         <Projects />
         <Leadership />
         <Contact />
